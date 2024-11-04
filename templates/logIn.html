@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="d-flex gap-3 align-items-center">
+          <h1>Log In</h1>
+
+      </div>
+<div class="col-9">
+                <form action="#" method="POST">
+                    <div class="d-flex flex-column align-items-center gap-4">
+                        <div class="input-group input-group-lg">
+                            <label for="inputLogin" class="input-group-text">Login</label>
+                            <input type="text" class="form-control" id="inputLogin" aria-label="Login">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <label for="inputPassword" class="input-group-text">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" aria-label="Password">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gap-4">
+                            <button type="submit" class="btn btn-secondary btn-lg">Log in</button>
+                            <a href="registration.html">create new account</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+{% endblock %}

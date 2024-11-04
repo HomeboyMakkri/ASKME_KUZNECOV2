@@ -1,0 +1,47 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="d-flex gap-3 align-items-center">
+          <h1>Registration</h1>
+
+      </div>
+
+      
+          <h5 class="text-danger p-3">Sorry, this email adress already registred!</h5>
+          <div class="col-9">
+                <form action="#" method="POST">
+                    <div class="d-flex flex-column align-items-center gap-4">
+                        <div class="input-group input-group-lg">
+                            <label for="inputLogin" class="input-group-text">Login</label>
+                            <input type="text" class="form-control" id="inputLogin" aria-label="Login">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <label for="inputEmail" class="input-group-text">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-label="Email">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <label for="inputNickname" class="input-group-text">NickName</label>
+                            <input type="text" class="form-control" id="inputNickname" aria-label="NickName">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <label for="inputPassword" class="input-group-text">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" aria-label="Password">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <label for="inputRepeatPassword" class="input-group-text">Repeat Password</label>
+                            <input type="password" class="form-control" id="inputRepeatPassword" aria-label="Repeat Password">
+                        </div>
+                        <div class="input-group mb-3" style="justify-content: center;">
+                            <input type="file" class="form-control" id="inputGroupFile01" style="width: 50%;">
+                        </div>
+                        <div class="d-flex flex-column align-items-center gap-4">
+                            <button type="submit" class="btn btn-secondary btn-lg">Register!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+{% endblock %}

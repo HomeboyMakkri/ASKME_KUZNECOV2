@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+        <div class="d-flex gap-3 align-items-center">
+              <h1>New Question</h1>
+              <a href="{% url 'index' %}">New Questions</a>
+        </div>
+    <div class="col-9">
+                <form action="#" method="POST">
+                <div class = "d-flex flex-column gap-4">
+                    <div class="card w-100" style="width: 18rem; border: none;">
+                        <div class="input-group input-group-lg">
+                            <label class="input-group-text" for="titleInput">Title</label>
+                            <input type="text" class="form-control" id="titleInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                    </div>
+
+
+                    <div class="card w-100" style="width: 18rem; border: none;">
+                        <div class="input-group input-group-lg">
+                            <label class="input-group-text" for="textInput">Text</label>
+                            <input type="text" class="form-control form-control-lg" id="textInput" style="height: 400px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                    </div>
+
+
+                    <div class="card w-100" style="width: 18rem; border: none;">
+                        <div class="input-group input-group-lg">
+                            <label class="input-group-text" for="tagsInput">Tags</label>
+                            <input type="text" class="form-control" id="tagsInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-secondary btn-lg">ASK!</button>
+                    </div>
+                    <div id="errorBlock" class="alert alert-danger mt-3" style="display: none;">
+                        <!-- Ошибки будут выводиться здесь -->
+                    </div>
+                </div>
+
+            </form>
+        </div>
+{% endblock %}
